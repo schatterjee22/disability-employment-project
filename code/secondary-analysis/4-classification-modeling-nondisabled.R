@@ -58,9 +58,9 @@ rf_3 = randomForest(factor(Unemployed) ~ ., mtry = 3, data = nondisab_train)
 rf_7 = randomForest(factor(Unemployed) ~ ., mtry = 7, data = nondisab_train)
 rf_13 = randomForest(factor(Unemployed) ~ ., mtry = 13, data = nondisab_train)
 oob_errors = bind_rows(
-  tibble(ntree = 1:500, oob_err = rf_3$err.rate[,"OOB"], m = 3),
-  tibble(ntree = 1:500, oob_err = rf_7$err.rate[,"OOB"], m = 7),
-  tibble(ntree = 1:500, oob_err = rf_13$err.rate[,"OOB"], m = 13)
+  tibble(ntree = 1:200, oob_err = rf_3$err.rate[,"OOB"], m = 3),
+  tibble(ntree = 1:200, oob_err = rf_7$err.rate[,"OOB"], m = 7),
+  tibble(ntree = 1:200, oob_err = rf_13$err.rate[,"OOB"], m = 13)
 )
 oob_errors %>%
   ggplot(aes(x = ntree, y = oob_err, colour = factor(m))) +
@@ -73,7 +73,7 @@ rf_fit = randomForest(factor(Unemployed) ~ ., mtry = 7, importance = TRUE, data 
 
 # plot OOB error
 tibble(oob_error = rf_fit$err.rate[,"OOB"],
-       trees = 1:500) %>%
+       trees = 1:100) %>%
   ggplot(aes(x = trees, y = oob_error)) + geom_line() + theme_bw()
 
 # see variable importance

@@ -110,7 +110,7 @@ ggsave(filename = "results/secondary-analysis/ridge-roc-curve.png",
 # ~~~~~~~~~~~~~~~~~~~~
 
 # Random Forest
-rf_probabilities = predict(rf_fit, n.trees = 500, mtry = 7,
+rf_probabilities = predict(rf_fit, n.trees = 100, mtry = 7,
                            type = "response", newdata = nondisab_test)
 #rf_predictions = as.numeric(rf_probabilities > 0.5)
 
