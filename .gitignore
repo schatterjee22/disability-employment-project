@@ -1,2 +1,4 @@
 .DS_Store
 results/secondary-analysis/nondis_rf_fit.Rda
+data/raw/Household CPS Data.csv
+data/raw/Person CPS Data.csv
