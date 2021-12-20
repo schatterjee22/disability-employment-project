@@ -18,6 +18,7 @@ ASEC of the CPI: U.S. Census Bureau
 
 The csv files for household, family, and person level data can be accessed here: https://www.census.gov/data/datasets/time-series/demo/cps/cps-asec.2019.html
 Please click on the "CSV Data File (includes Replicate Weights)" to download.
+*Household and Person Level Data from the ASEC was not uploaded (see gitignore) due to file size. Please download the data and name it "Household CPS Data" and "Person CPS Data" to follow the code. Thank you.*
 
 Americans with Disabilities Act Violations (2019) Per State : EEOC
 
