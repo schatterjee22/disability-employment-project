@@ -1,0 +1,217 @@
+---
+title: "Data Dictionary (ASEC Data)"
+output: html_notebook
+---
+https://www2.census.gov/programs-surveys/cps/datasets/2019/march/06_ASEC_2019-Data_Dictionary_Full.pdf
+
+*Household*
+`GESTFIPS`: State FIPS code
+01-56 State codE
+
+`H_SEQ`: Household sequence number
+00001- 99999 = Household sequence number
+
+`GTMETSTA`: Metropolitan Status
+1 = Metropolitan
+2 = Non-metropolitan
+3 = Not identified
+
+*Family*
+`FOWNU18`: Number of own never married children under 18, for FHEADIDX.
+Primary family includes own children in related subfamily even if
+the child is the head of the subfamily.
+0 = None, not in universe
+1 = 1 ... 9 = 9 or more
+
+`FH_SEQ`: Household sequence number (To connect to household and person)
+00001- 99999 = Household sequence number
+
+*Person*
+`PH_SEQ`: Household Sequence Number (To connect to household and family)
+00001- 99999 = Household sequence number
+
+`A_HGA`: Educational Attainment
+31 = Less than 1st grade, 
+32 = 1st,2nd,3rd,or 4th grade
+33 = 5th or 6th grade
+34 = 7th and 8th grade
+35 = 9th grade
+36 = 10th grade
+37 = 11th grade
+38 = 12th grade no diploma
+39 = High school graduate - high school diploma or
+equivalent
+40 = Some college but no degree
+41 = Associate degree in college - occupation/vocation
+program
+42 = Associate degree in college - academic program
+43 = Bachelor's degree (for example: BA,AB,BS)
+44 = Master's degree (for example:
+MA,MS,MENG,MED,MSW, MBA)
+45 = Professional school degree (for example:
+MD,DDS,DVM,LLB,JD)
+46 = Doctorate degree (for example: PHD,EDD)
+
+`AGE1`
+Age recode - Persons 15+ years
+0 = Not in universe
+1 = 15 years
+2 = 16 and 17 years
+3 = 18 and 19 years
+4 = 20 and 21 years
+5 = 22 to 24 years
+6 = 25 to 29 years
+7 = 30 to 34 years
+8 = 35 to 39 years
+9 = 40 to 44 years
+10 = 45 to 49 years
+11 = 50 to 54 years
+12 = 55 to 59 years
+13 = 60 to 61 years
+14 = 62 to 64 years
+15 = 65 to 69 years
+16 = 70 to 74 years
+17 = 75 years and over
+
+`A_SEX`: Sex
+1 = Male
+2 = Female
+
+`PRCITSHP`: CITIZENSHIP GROUP
+1 = Native, born in US
+2 = Native, born in PR or US outlying area
+3 = Native, born abroad of US parent(s)
+4 = Foreign born, US cit by naturalization
+5 = Foreign born, not a US citizen
+
+`A_MARITL`: Marital status
+1 = Married - civilian spouse present
+2 = Married - AF spouse present
+3 = Married - spouse absent (exc.separated)
+4 = Widowed
+5 = Divorced
+6 = Separated
+7 = Never married
+
+`PEDISDRS`: Does...have difficulty dressing or bathing?
+-1 = NIU (NOT IN UNIVERSE)
+1 = Yes 
+2 = No
+
+`PEDISEAR`: Is...deaf or does ...have serious difficulty hearing?
+-1 = NIU (NOT IN UNIVERSE)
+1 = Yes 
+2 = No
+
+`PEDISEYE`: Is...blind or does...have serious difficulty seeing even when wearing glasses?
+-1 = NIU (NOT IN UNIVERSE)
+1 = Yes 
+2 = No
+
+`PEDISOUT`: Because of a physical, mental, or emotional condition, does...have difficulty doing errands along such as visiting a doctor’s office or shopping?
+-1 = NIU (NOT IN UNIVERSE)
+1 = Yes 
+2 = No
+
+`PEDISPHY`: Does...have serious difficulty Walking or climbing stairs?
+-1 = NIU (NOT IN UNIVERSE)
+1 = Yes 
+2 = No
+
+`PEDISREM`: Because of a physical, mental, or emotional condition, does...have serious difficulty concentrating, remembering, or making decisions?
+-1 = NIU (NOT IN UNIVERSE)
+1 = Yes
+2 = No
+
+`PEFNTVTY`: In what country was your father born?
+(Modified from original survey question)
+0 = Not born in the United States
+1 = Born in the United States (Country Code = 57)
+
+`PEMNTVTY`: In what country was your mother born?
+(Modified from original survey question)
+0 = Not born in the United States
+1 = Born in the United States (Country Code = 57)
+
+`PEPAR1TYP`: Demographics type of Parent 1
+(Modified to measure if parent present in household)
+0 = No parent 1 present
+1 = Parent 1 present
+
+`PEPAR2TYP`: Demographics type of Parent 2
+(Modified to measure if parent present in household)
+0 = No parent 2 present
+1 = Parent 2 present
+
+`PEHSPNON`: Are you Spanish, Hispanic, or Latino?
+1 = Yes, 
+2 = No
+
+`PRDTRACE`: Race
+01 = White only
+02 = Black only
+03 = American Indian, Alaskan Native only (AI)
+04 = Asian only
+05 = Hawaiian/Pacific Islander only (HP)
+06 = White-Black
+07 = White-AI
+08 = White-Asian
+09 = White-HP
+10 = Black-AI
+11 = Black-Asian
+12 = Black-HP
+13 = AI-Asian
+14 = AI-HP
+15 = Asian-HP
+16 = White-Black-AI
+17 = White-Black-Asian
+18 = White-Black-HP
+19 = White-AI-Asian
+20 = White-AI-HP
+21 = White-Asian-HP
+22 = Black-AI-Asian
+23 = White-Black-AI-Asian
+24 = White-AI-Asian-HP
+25 = Other 3 race comb.
+26 = Other 4 or 5 race comb.
+
+`PEAFEVER`: Did you ever serve on active duty in the U.S. Armed Forces?
+-1 = NIU (Not In Universe)
+1 = Yes
+2 = No
+
+`COV`: Any health insurance coverage last year
+0= Infant born after calendar year
+1= Yes
+2= No
+
+`MIGSAME`: Was ... living in this house (apt.) 1 year ago;
+that is, on March 1, 2019?
+0 = NIU (Not In Universe)
+1 = yes (nonmover)
+2 = no, different house in u.s. (mover)
+3 = no, outside the u.s. (mover)
+
+`PEARNVAL`: total persons earnings
+ 0 = none;
+negative amt = income (loss);
+positive amt = income
+
+`PRCOW1`: Class of worker recode-job 1
+Values: 0 = NIU (Unemployed)
+1 = Federal govt
+2 = State govt
+3 = Local govt
+4 = Private (incl. self-employed incorp.)
+5 = Self-employed, unincorp.
+6 = Without pay
+(Used values 0 and 6 to indicate unemployment and the other values to indicate employment)
+
+`PRDISFLG`: Does this person have any of these disability conditions? 
+-1 = NIU (NOT IN UNIVERSE)
+1 = Yes
+2 = No
+
+
+
+
