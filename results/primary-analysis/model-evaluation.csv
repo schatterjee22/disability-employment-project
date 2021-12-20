@@ -1,0 +1,4 @@
+Method,Misclassification Rate
+Ridge,0.18
+Logistic,0.181
+Random Forest,0.158
